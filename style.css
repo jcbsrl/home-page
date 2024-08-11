@@ -1,0 +1,113 @@
+/*Universal styling*/
+html, body{
+    color: #000000;
+    font-size: 16px;
+    font-family: "Josefin Slab", serif;
+    font-style: normal;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+header p{
+    padding-right: 1rem;
+}
+
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+}
+
+.start-card{
+    font-size: 4rem;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+#work{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #D16014;
+    color: #313715;
+    height: 100%;
+}
+
+#work:hover{
+    background-color: #EA701F;
+    color: #424A1C;
+    cursor: pointer;
+}
+
+
+#fun{
+    background-color: #313715;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:#D16014;
+    height: 100%;
+}
+
+#fun:hover{
+    background-color:  #424A1C;
+    color: #EA701F;
+    cursor: pointer;
+}
+
+.work-site{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+
+}
+.work-card{
+    display: none;
+}
+
+.work-card img{
+    height: 10rem;
+    width: auto;
+    margin: 2rem;
+       filter: brightness(0) saturate(100%) invert(36%) sepia(94%) saturate(812%) hue-rotate(353deg) brightness(99%) contrast(92%);
+}
+
+.fun-site{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.fun-card{
+    display: none;  
+}
+
+.fun-card img{
+    height: 10rem;
+    width: auto;
+    margin: 2rem;
+    filter: brightness(0) saturate(100%) invert(19%) sepia(12%) saturate(1835%) hue-rotate(30deg) brightness(98%) contrast(95%);
+}
