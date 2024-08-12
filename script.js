@@ -110,8 +110,8 @@ funCardsHide = function(){
 }
 
 addListners = function(){
-    work.addEventListener("click", workClick);
-    fun.addEventListener("click", funClick);
+    workP.addEventListener("click", workClick);
+    funP.addEventListener("click", funClick);
 }
 
 addListners();
