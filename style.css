@@ -89,7 +89,6 @@ header p{
     height: 10rem;
     width: auto;
     margin: 2rem;
-       filter: brightness(0) saturate(100%) invert(36%) sepia(94%) saturate(812%) hue-rotate(353deg) brightness(99%) contrast(92%);
 }
 
 .fun-site{
@@ -109,5 +108,26 @@ header p{
     height: 10rem;
     width: auto;
     margin: 2rem;
-    filter: brightness(0) saturate(100%) invert(19%) sepia(12%) saturate(1835%) hue-rotate(30deg) brightness(98%) contrast(95%);
+}
+
+#previous {
+    display: none;
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    height: 4rem;
+    width: auto;
+    margin: 1rem;
+    filter: brightness(0) saturate(100%) invert(32%) sepia(100%) saturate(788%) hue-rotate(353deg) brightness(97%) contrast(94%);
+}
+
+#next {
+    display: none;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    height: 4rem;
+    width: auto;
+    margin: 1rem;
+    filter: brightness(0) saturate(100%) invert(14%) sepia(34%) saturate(739%) hue-rotate(30deg) brightness(94%) contrast(94%);
 }
