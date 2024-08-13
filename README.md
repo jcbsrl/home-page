@@ -1,4 +1,5 @@
 #About this project
+===================
 
 I made this homepage as a project to learn more about how JavaScript can work along side HTML and CSS to style a website.
 I wanted to learn how to use eventListners with different type of elements.
