@@ -83,7 +83,7 @@ header p{
 
     }
     .work-card{
-        display: none;
+        opacity: 0;
     }
 
 
@@ -97,19 +97,34 @@ header p{
     }
 
     .fun-card{
-        display: none;  
+        opacity: 0; 
     }
 
     .work-card img{
         height: 10rem;
         width: auto;
-        margin: 2rem;
+        margin: 0rem 2rem;
+        filter: brightness(0) saturate(100%) invert(14%) sepia(34%) saturate(739%) hue-rotate(30deg) brightness(94%) contrast(94%);
     }
 
     .fun-card img{
         height: 10rem;
         width: auto;
-        margin: 2rem;
+        margin: 0rem 2rem;
+        filter: brightness(0) saturate(100%) invert(32%) sepia(100%) saturate(788%) hue-rotate(353deg) brightness(97%) contrast(94%);        
+    }
+    
+    .fun-card p{
+        color: #D16014;    
+        margin: 0rem;
+        opacity: 0;
+    }
+
+    .work-card p{
+        color: #D16014;
+        color:#313715;      
+        margin: 0rem;
+        opacity: 0;
     }
 }
 
@@ -166,7 +181,8 @@ header p{
     
     }
     .work-card{
-        display: none;
+        opacity: 1;
+        
     }
     
     
@@ -180,17 +196,28 @@ header p{
     }
     
     .fun-card{
-        display: none;  
+        opacity: 1;
+         
     }
     
     .work-card img{
         height: auto;
         width: 90%;
-    }
+        filter: brightness(0) saturate(100%) invert(14%) sepia(34%) saturate(739%) hue-rotate(30deg) brightness(94%) contrast(94%);    }
 
     .fun-card img{
         height: auto;
         width: 90%;
+        filter: brightness(0) saturate(100%) invert(32%) sepia(100%) saturate(788%) hue-rotate(353deg) brightness(97%) contrast(94%);
+
+    }
+
+    .fun-card p{
+        display: none;
+    }
+
+    .work-card p{
+        display: none;
     }
 }
 

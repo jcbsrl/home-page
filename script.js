@@ -3,22 +3,44 @@ let workP = document.querySelector("#work p");
 let fun = document.getElementById("fun");
 let funP = document.querySelector("#fun p");
 let arrayOfWorkCards = document.getElementsByClassName('work-card');
-let arrayofFunCards = document.getElementsByClassName('fun-card');
+let arrayOfFunCards = document.getElementsByClassName('fun-card');
 let next = document.getElementById("next");
 let previous = document.getElementById("previous");
 let header = document.querySelector("header");
-let workIcon1 = document.getElementById("#work-icon1");
-let workIcon2 = document.getElementById("#work-icon2");
-let workIcon3 = document.getElementById("#work-icon3");
-let funIcon1 = document.getElementById("#fun-icon1");
-let funIcon2 = document.getElementById("#fun-icon2");
-let funIcon3 = document.getElementById("#fun-icon3");
+let workIcon1 = document.getElementById("work-icon1");
+let workIcon2 = document.getElementById("work-icon2");
+let workIcon3 = document.getElementById("work-icon3");
+let workText1 = document.getElementById("work-text1");
+let workText2 = document.getElementById("work-text2");
+let workText3 = document.getElementById("work-text3");
+let funIcon1 = document.getElementById("fun-icon1");
+let funIcon2 = document.getElementById("fun-icon2");
+let funIcon3 = document.getElementById("fun-icon3");
+let funText1 = document.getElementById("fun-text1");
+let funText2 = document.getElementById("fun-text2");
+let funText3 = document.getElementById("fun-text3");
 
 header.style.transition = "1s";
 work.style.transition = "1s";
 workP.style.transition = "1s";
 fun.style.transition = "1s";
 funP.style.transition = "1s";
+workText1.style.transition = "0.5s"
+workText2.style.transition = "0.5s"
+workText3.style.transition = "0.5s"
+funText1.style.transition = "0.5s"
+funText2.style.transition = "0.5s"
+funText3.style.transition = "0.5s"
+
+hideCardsFromStart = function(){
+    for (let i = 0; i < arrayOfWorkCards.length; i++){
+        arrayOfWorkCards[i].style.display = "none";}
+    for (let i = 0; i < arrayOfFunCards.length; i++){
+        arrayOfFunCards[i].style.display = "none"
+    }
+} 
+
+hideCardsFromStart();
 
 workClick = function(){
     work.style.width = "100%";
@@ -89,29 +111,35 @@ previousClick = function(){
 
 workCardsShow = function(){
     for (let i = 0; i < arrayOfWorkCards.length; i++){
+        arrayOfWorkCards[i].style.transition = "0.5s";
+        arrayOfWorkCards[i].style.opacity = "1";
         arrayOfWorkCards[i].style.display = "block";
-        arrayOfWorkCards[i].style.filter = "brightness(0) saturate(100%) invert(14%) sepia(34%) saturate(739%) hue-rotate(30deg) brightness(94%) contrast(94%)";
     }
 }
 
 funCardsShow = function(){
-    for (let i = 0; i < arrayofFunCards.length; i++){
-        arrayofFunCards[i].style.display = "block";
-        arrayofFunCards[i].style.filter = "brightness(0) saturate(100%) invert(32%) sepia(100%) saturate(788%) hue-rotate(353deg) brightness(97%) contrast(94%)";
+    for (let i = 0; i < arrayOfFunCards.length; i++){
+        arrayOfFunCards[i].style.transition = "0.5s";
+        arrayOfFunCards[i].style.opacity = "1";
+        arrayOfFunCards[i].style.display = "block";
+        
     }
 }
 
 workCardsHide = function(){
     for (let i = 0; i < arrayOfWorkCards.length; i++){
-        arrayOfWorkCards[i].style.display = null;
-        arrayOfWorkCards[i].style.filter = null;
+        arrayOfWorkCards[i].style.transition = "0.5s";
+        arrayOfWorkCards[i].style.opacity = "0";
+        setTimeout(() => {arrayOfWorkCards[i].style.display = "none"},0.0001 * 1000);
     }
 }
 
 funCardsHide = function(){
-    for (let i = 0; i < arrayofFunCards.length; i++){
-        arrayofFunCards[i].style.display = null;
-        arrayofFunCards[i].style.filter = null;
+    for (let i = 0; i < arrayOfFunCards.length; i++){
+        arrayOfFunCards[i].style.transition = "0.5s"
+        arrayOfFunCards[i].style.opacity = "0";
+        setTimeout(() => {arrayOfFunCards[i].style.display = "none"}, 0.0001 * 1000);
+
     }
 }
 
@@ -122,4 +150,58 @@ addListners = function(){
 
 addListners();
 
-funIcon1.addEventListener("hover")
+showHiddenText = function(target){
+    target.style.opacity = '1';  
+}
+
+hideShownText = function(target){
+    target.style.opacity = '0';
+}
+
+workIcon1.addEventListener("mouseenter", function(){
+    showHiddenText(workText1);
+});
+
+workIcon1.addEventListener("mouseleave", function(){
+    hideShownText(workText1);
+});
+
+workIcon2.addEventListener("mouseenter", function(){
+    showHiddenText(workText2);
+});
+
+workIcon2.addEventListener("mouseleave", function(){
+    hideShownText(workText2);
+});
+
+workIcon3.addEventListener("mouseenter", function(){
+    showHiddenText(workText3);
+});
+
+workIcon3.addEventListener("mouseleave", function(){
+    hideShownText(workText3);
+});
+
+funIcon1.addEventListener("mouseenter", function(){
+    showHiddenText(funText1);
+});
+
+funIcon1.addEventListener("mouseleave", function(){
+    hideShownText(funText1);
+});
+
+funIcon2.addEventListener("mouseenter", function(){
+    showHiddenText(funText2);
+});
+
+funIcon2.addEventListener("mouseleave", function(){
+    hideShownText(funText2);
+});
+
+funIcon3.addEventListener("mouseleave", function(){
+    hideShownText(funText3);
+});
+
+funIcon3.addEventListener("mouseenter", function(){
+    showHiddenText(funText3);
+});
