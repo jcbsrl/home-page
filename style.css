@@ -30,85 +30,170 @@ header p{
     height: 100%;
 
 }
+/*Desktop*/
+@media screen and (min-width: 600px) {
+    .start-card{
+        font-size: 4rem;
+        width: 50%;
+        height: 100%;
+        text-align: center;
+    }
 
-.start-card{
-    font-size: 4rem;
-    width: 50%;
-    height: 100%;
-    text-align: center;
+    #work{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #D16014;
+        color: #313715;
+        height: 100%;
+    }
+
+    #work:hover{
+        background-color: #EA701F;
+        color: #424A1C;
+        cursor: pointer;
+    }
+
+
+    #fun{
+        background-color: #313715;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color:#D16014;
+        height: 100%;
+    }
+
+    #fun:hover{
+        background-color:  #424A1C;
+        color: #EA701F;
+        cursor: pointer;
+    }
+
+    .work-site{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+
+    }
+    .work-card{
+        display: none;
+    }
+
+
+    .fun-site{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .fun-card{
+        display: none;  
+    }
+
+    .work-card img{
+        height: 10rem;
+        width: auto;
+        margin: 2rem;
+    }
+
+    .fun-card img{
+        height: 10rem;
+        width: auto;
+        margin: 2rem;
+    }
 }
 
-#work{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: #D16014;
-    color: #313715;
-    height: 100%;
+/*Mobile*/
+@media screen and (max-width: 600px) {
+    .start-card{
+        font-size: 4rem;
+        width: 50%;
+        height: 100%;
+        text-align: center;
+    }
+    
+    #work{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #D16014;
+        color: #313715;
+        height: 100%;
+    }
+    
+    #work:hover{
+        background-color: #EA701F;
+        color: #424A1C;
+        cursor: pointer;
+    }
+    
+    
+    #fun{
+        background-color: #313715;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color:#D16014;
+        height: 100%;
+    }
+    
+    #fun:hover{
+        background-color:  #424A1C;
+        color: #EA701F;
+        cursor: pointer;
+    }
+    
+    .work-site{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    
+    }
+    .work-card{
+        display: none;
+    }
+    
+    
+    .fun-site{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
+    
+    .fun-card{
+        display: none;  
+    }
+    
+    .work-card img{
+        height: auto;
+        width: 90%;
+    }
+
+    .fun-card img{
+        height: auto;
+        width: 90%;
+    }
 }
 
-#work:hover{
-    background-color: #EA701F;
-    color: #424A1C;
-    cursor: pointer;
-}
-
-
-#fun{
-    background-color: #313715;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color:#D16014;
-    height: 100%;
-}
-
-#fun:hover{
-    background-color:  #424A1C;
-    color: #EA701F;
-    cursor: pointer;
-}
-
-.work-site{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-
-}
-.work-card{
-    display: none;
-}
-
-.work-card img{
-    height: 10rem;
-    width: auto;
-    margin: 2rem;
-}
-
-.fun-site{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-}
-
-.fun-card{
-    display: none;  
-}
-
-.fun-card img{
-    height: 10rem;
-    width: auto;
-    margin: 2rem;
-}
 
 #previous {
     display: none;

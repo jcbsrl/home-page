@@ -7,6 +7,12 @@ let arrayofFunCards = document.getElementsByClassName('fun-card');
 let next = document.getElementById("next");
 let previous = document.getElementById("previous");
 let header = document.querySelector("header");
+let workIcon1 = document.getElementById("#work-icon1");
+let workIcon2 = document.getElementById("#work-icon2");
+let workIcon3 = document.getElementById("#work-icon3");
+let funIcon1 = document.getElementById("#fun-icon1");
+let funIcon2 = document.getElementById("#fun-icon2");
+let funIcon3 = document.getElementById("#fun-icon3");
 
 header.style.transition = "1s";
 work.style.transition = "1s";
@@ -115,3 +121,5 @@ addListners = function(){
 }
 
 addListners();
+
+funIcon1.addEventListener("hover")
