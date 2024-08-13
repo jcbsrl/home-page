@@ -14,11 +14,24 @@ html, body{
 header{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+header p{
+    padding: 0rem 1rem;
+    align-self: flex-start;
 }
 
-header p{
-    padding-right: 1rem;
+header a{
+    text-decoration: none;
+    color: #000000;
+    padding-right: 2rem;
+    margin-left: auto;
+}
+
+header a:hover{
+    text-decoration: underline;
 }
 
 
